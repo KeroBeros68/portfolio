@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+:root {
+  --main-color: #161616;
+  --primary-color: #fdfdfd;
+}
+
+* {
+  color: var(--primary-color);
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--main-color);
+}
