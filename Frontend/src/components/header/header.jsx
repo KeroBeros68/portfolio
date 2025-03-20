@@ -1,10 +1,19 @@
+import Navbar from '../navbar/navbar'
+import logo from '../../assets/logo-horizontal.png'
+import { Link } from 'react-router'
+
 function Header() {
   return (
     <>
-      <header className="mx-auto p-4 border border-white">
-        <h1 className="text-xl max-w-[280px] break-words">
-          Kévin BERTRAND DEVELLOPEUR WEB - BACKEND
-        </h1>
+      <header className="max-w-[1440px] mx-auto p-4 flex justify-between items-center">
+        <Link to={'/'}>
+          <img
+            src={logo}
+            alt="logo de Kévin BERTRAND - Développeur web"
+            className="max-h-[48px]"
+          />
+        </Link>
+        <Navbar />
       </header>
     </>
   )

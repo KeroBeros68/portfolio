@@ -4,12 +4,12 @@ import { BrowserRouter } from 'react-router'
 import './index.css'
 
 import AppRouter from './router/router.jsx'
-import Navbar from './components/navbar/navbar.jsx'
+import Header from './components/header/header.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
+      <Header />
       <AppRouter />
     </BrowserRouter>
   </StrictMode>,
