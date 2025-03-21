@@ -5,15 +5,17 @@ import { Link } from 'react-router'
 function Header() {
   return (
     <>
-      <header className="max-w-[1440px] w-full mx-auto p-4 flex justify-between items-center">
-        <Link to={'/'}>
+      <header className="mx-auto flex w-full max-w-[1440px] items-center p-4">
+        <Link to={'/'} className="m-2">
           <img
             src={logo}
             alt="logo de Kévin BERTRAND - Développeur web"
             className="max-h-[48px]"
           />
         </Link>
-        <Navbar />
+        <div className="flex w-full justify-end border-b-1 p-1">
+          <Navbar />
+        </div>
       </header>
     </>
   )
