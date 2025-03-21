@@ -11,6 +11,9 @@ import {
   NavigationMenuViewport,
 } from '../ui/navigation-menu'
 
+const linkStyle =
+  ' text-lg bg-[linear-gradient(to_right,var(--background),var(--background))] hover:bg-[linear-gradient(var(--background),var(--emerald-800))]'
+
 function Navbar() {
   return (
     <>
@@ -19,31 +22,31 @@ function Navbar() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle() + ' text-lg'}
+                className={navigationMenuTriggerStyle() + linkStyle}
                 asChild
               >
                 <Link to={'/'}>Acceuil</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-lg">
+              <NavigationMenuTrigger className={linkStyle}>
                 A propos
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <NavigationMenuLink className="text-lg" asChild>
+                <NavigationMenuLink className={linkStyle} asChild>
                   <Link to={'/skills'}>Skills</Link>
                 </NavigationMenuLink>
-                <NavigationMenuLink className="text-lg" asChild>
+                <NavigationMenuLink className={linkStyle} asChild>
                   <Link to={'/experiences'}>Expériences</Link>
                 </NavigationMenuLink>
-                <NavigationMenuLink className="text-lg" asChild>
+                <NavigationMenuLink className={linkStyle} asChild>
                   <Link to={'/formation'}>Formation</Link>
                 </NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle() + ' text-lg'}
+                className={navigationMenuTriggerStyle() + linkStyle}
                 asChild
               >
                 <Link to={'/portfolio'}>Portfolio</Link>
@@ -51,7 +54,7 @@ function Navbar() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle() + ' text-lg'}
+                className={navigationMenuTriggerStyle() + linkStyle}
                 asChild
               >
                 <Link to={'/contact'}>Contact</Link>

@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 function Header() {
   return (
     <>
-      <header className="max-w-[1440px] mx-auto p-4 flex justify-between items-center">
+      <header className="max-w-[1440px] w-full mx-auto p-4 flex justify-between items-center">
         <Link to={'/'}>
           <img
             src={logo}

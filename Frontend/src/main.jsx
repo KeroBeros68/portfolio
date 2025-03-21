@@ -5,12 +5,16 @@ import './index.css'
 
 import AppRouter from './router/router.jsx'
 import Header from './components/header/header.jsx'
+import Footer from './components/footer/footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Header />
-      <AppRouter />
+      <main className="flex-1 p-4">
+        <AppRouter />
+      </main>
+      <Footer />
     </BrowserRouter>
   </StrictMode>,
 )
