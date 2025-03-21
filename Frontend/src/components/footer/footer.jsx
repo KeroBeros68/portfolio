@@ -1,5 +1,5 @@
 import packageJson from '../../../package.json'
-import logo from '../../assets/logo-horizontal-grey.png'
+import logo from '@/assets/images/logo-horizontal-grey.png'
 
 const version = packageJson.version
 

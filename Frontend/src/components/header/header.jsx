@@ -1,5 +1,5 @@
 import Navbar from '../navbar/navbar'
-import logo from '../../assets/logo-horizontal.png'
+import logo from '@/assets/images/logo-horizontal.png'
 import { Link } from 'react-router'
 
 function Header() {
