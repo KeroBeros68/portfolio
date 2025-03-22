@@ -1,0 +1,20 @@
+[
+  {
+    "userId": 1,
+    "title": "Application de gestion de tâches",
+    "screenshots": ["screenshot1.png", "screenshot2.png"],
+    "technologies": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "userId": 2,
+    "title": "Site e-commerce",
+    "screenshots": ["screenshot3.png", "screenshot4.png"],
+    "technologies": ["Angular", "Firebase", "Bootstrap"]
+  },
+  {
+    "userId": 3,
+    "title": "Plateforme de blog",
+    "screenshots": ["screenshot5.png", "screenshot6.png"],
+    "technologies": ["Vue.js", "Django", "PostgreSQL"]
+  }
+]
