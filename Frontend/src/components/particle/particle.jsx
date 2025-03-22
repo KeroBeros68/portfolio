@@ -23,9 +23,9 @@ export default function Particle() {
     })
   }, [])
 
-  const particlesLoaded = (container) => {
+  /*   const particlesLoaded = (container) => {
     console.log(container)
-  }
+  } */
 
   const options = useMemo(
     () => ({
@@ -112,7 +112,7 @@ export default function Particle() {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded}
+        // particlesLoaded={particlesLoaded}
         options={options}
         className="absolute z-10 h-full w-full"
       />

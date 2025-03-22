@@ -10,7 +10,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
   NavigationMenuViewport,
-} from '../ui/navigation-menu'
+} from '@/components/ui/navigation-menu'
 
 import {
   Sheet,
@@ -26,7 +26,7 @@ import {
   AccordionItem,
   AccordionContent,
   AccordionTrigger,
-} from '../ui/accordion'
+} from '@/components/ui/accordion'
 
 import logo from '@/assets/images/logo.png'
 import { Separator } from '@radix-ui/react-separator'
