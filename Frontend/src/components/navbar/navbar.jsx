@@ -22,6 +22,9 @@ import {
 } from '@/components/ui/sheet'
 
 import logo from '@/assets/images/logo.png'
+import { Separator } from '@radix-ui/react-separator'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const linkStyle =
   ' text-lg bg-[linear-gradient(to_right,var(--background),var(--background))] hover:bg-[linear-gradient(var(--background),var(--emerald-800))]'
@@ -86,25 +89,46 @@ const menuNav = (
   </NavigationMenu>
 )
 
+const mediaNav = (
+  <div className="ml-4 flex items-center gap-3">
+    <a href="">
+      <FontAwesomeIcon icon={faLinkedin} size="lg" />
+    </a>
+    <a href="https://github.com/KeroBeros68">
+      <FontAwesomeIcon icon={faGithub} size="lg" />
+    </a>
+  </div>
+)
+
 function Navbar() {
   return (
     <>
       <nav>
-        <div className="hidden md:flex">{menuNav}</div>
+        <div className="hidden md:flex">
+          {menuNav}
+          <Separator
+            orientation="vertical"
+            className="mx-2 mt-1 h-7 w-px bg-[var(--border)]"
+          />
+          {mediaNav}
+        </div>
         <div className="m-0.5 flex items-center justify-between md:hidden">
           <Sheet>
             <SheetTrigger>
               <Menu className="h-8 w-8" />
             </SheetTrigger>
-            <SheetContent>
-              <SheetHeader className="items-center">
+            <SheetContent className="items-center">
+              <SheetHeader className="w-full items-center">
                 <img
                   src={logo}
                   alt="logo de Kévin BERTRAND - Développeur web"
-                  className="w-30"
+                  className="mt-10 w-30"
                 />
-                <SheetDescription>{menuNav}</SheetDescription>
               </SheetHeader>
+              <Separator className="mx-2 mt-1 h-px w-[60%] bg-[var(--border)]" />
+              <SheetDescription>{menuNav}</SheetDescription>
+              <Separator className="mx-2 mt-1 h-px w-[60%] bg-[var(--border)]" />
+              {mediaNav}
             </SheetContent>
           </Sheet>
         </div>
