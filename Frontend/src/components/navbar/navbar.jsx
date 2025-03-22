@@ -36,6 +36,17 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 const linkStyle =
   ' text-lg bg-[linear-gradient(to_right,var(--background),var(--background))] hover:bg-[linear-gradient(var(--background),var(--emerald-800))]'
 
+const mediaNav = (
+  <div className="ml-4 flex items-center gap-3">
+    <a href="">
+      <FontAwesomeIcon icon={faLinkedin} size="lg" />
+    </a>
+    <a href="https://github.com/KeroBeros68">
+      <FontAwesomeIcon icon={faGithub} size="lg" />
+    </a>
+  </div>
+)
+
 const menuDesktop = (
   <NavigationMenu>
     <NavigationMenuList className="flex flex-col md:flex-row">
@@ -108,6 +119,7 @@ const menuMobil = (
           alt="logo de Kévin BERTRAND - Développeur web"
           className="mt-10 w-30"
         />
+        <SheetTitle className="hidden">Menu de navigation</SheetTitle>
       </SheetHeader>
       <Separator className="mx-2 mt-1 h-px w-[60%] bg-[var(--border)]" />
       <Link to={'/'}>Acceuil</Link>
@@ -140,17 +152,6 @@ const menuMobil = (
       {mediaNav}
     </SheetContent>
   </Sheet>
-)
-
-const mediaNav = (
-  <div className="ml-4 flex items-center gap-3">
-    <a href="">
-      <FontAwesomeIcon icon={faLinkedin} size="lg" />
-    </a>
-    <a href="https://github.com/KeroBeros68">
-      <FontAwesomeIcon icon={faGithub} size="lg" />
-    </a>
-  </div>
 )
 
 function Navbar() {
